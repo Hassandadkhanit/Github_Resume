@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="TitleHeaderView" id="iN0-l3-epB" customClass="TitleHeaderView" customModule="Github_Resume_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OpD-SY-9XI" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exT-VR-jhC" userLabel="SepratorView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                            <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="YTw-4T-efx"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm7-IM-aQ7">
+                            <rect key="frame" x="12" y="4" width="382" height="47"/>
+                            <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdh-1O-wyu" userLabel="SepratorView">
+                            <rect key="frame" x="0.0" y="54" width="414" height="1"/>
+                            <color key="backgroundColor" systemColor="separatorColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="8Rh-Dy-X02"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="mdh-1O-wyu" secondAttribute="bottom" id="3NC-P7-fwW"/>
+                        <constraint firstAttribute="trailing" secondItem="mdh-1O-wyu" secondAttribute="trailing" id="5YP-YO-xCS"/>
+                        <constraint firstAttribute="trailing" secondItem="nm7-IM-aQ7" secondAttribute="trailing" constant="20" id="65R-ui-zv1"/>
+                        <constraint firstAttribute="trailing" secondItem="exT-VR-jhC" secondAttribute="trailing" id="DTu-nG-IF3"/>
+                        <constraint firstItem="mdh-1O-wyu" firstAttribute="leading" secondItem="OpD-SY-9XI" secondAttribute="leading" id="L73-dv-gWx"/>
+                        <constraint firstItem="exT-VR-jhC" firstAttribute="top" secondItem="OpD-SY-9XI" secondAttribute="top" id="Pxv-Cx-xld"/>
+                        <constraint firstItem="nm7-IM-aQ7" firstAttribute="leading" secondItem="OpD-SY-9XI" secondAttribute="leading" constant="12" id="fVd-on-rc1"/>
+                        <constraint firstAttribute="bottom" secondItem="nm7-IM-aQ7" secondAttribute="bottom" constant="4" id="grr-WQ-ifu"/>
+                        <constraint firstItem="exT-VR-jhC" firstAttribute="leading" secondItem="OpD-SY-9XI" secondAttribute="leading" id="pAE-xp-kWB"/>
+                        <constraint firstItem="nm7-IM-aQ7" firstAttribute="top" secondItem="OpD-SY-9XI" secondAttribute="top" constant="4" id="pUW-yS-7BW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OpD-SY-9XI" secondAttribute="bottom" id="BMl-KP-evQ"/>
+                <constraint firstItem="OpD-SY-9XI" firstAttribute="leading" secondItem="LLk-Ll-ndL" secondAttribute="leading" id="Cqz-MC-AF3"/>
+                <constraint firstItem="LLk-Ll-ndL" firstAttribute="trailing" secondItem="OpD-SY-9XI" secondAttribute="trailing" id="UdC-b0-ETk"/>
+                <constraint firstItem="OpD-SY-9XI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pye-ym-guU"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="LLk-Ll-ndL"/>
+            <connections>
+                <outlet property="titleLabel" destination="nm7-IM-aQ7" id="Vyt-gv-B7E"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-155.02232142857142"/>
+        </view>
+    </objects>
+</document>
